@@ -1,0 +1,33 @@
+<body>
+  <div class="container">
+    <div class="title">Contact Us</div>
+    <div class="content">
+      <form >
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input formControlName="fullname"     type="text" placeholder="Enter your name" required>
+          </div>
+        
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input formControlName="email" type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input formControlName="phonenumber" type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Message</span>
+            <input formControlName="message" type="text" placeholder="type your message here" required>
+          </div>
+        
+        </div>
+       
+        <div class="button">
+         <input type="submit" value="Send"> <a routerLink="/login"></a> 
+        </div>
+      
+      </form>
+    </div>
+  </div>

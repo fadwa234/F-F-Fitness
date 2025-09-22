@@ -1,0 +1,43 @@
+<body>
+    <div class="container">
+      <div class="title">Sign-up</div>
+      <div class="content">
+        <form [formGroup]= "signupForm" (ngSubmit)= "signup()">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input formControlName="fullname"     type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input formControlName="username" type="text" placeholder="Enter your username" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input formControlName="email" type="text" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input formControlName="phonenumber" type="text" placeholder="Enter your number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input formControlName="password" type="text" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input  formControlName="confirmpassword" type="text" placeholder="Confirm your password" required>
+            </div>
+          </div>
+         
+          <div class="button">
+            <input type="submit" value="Sign up">
+          </div>
+          <div class="login__register">
+            Already have an account? <a routerLink="/login">Log in</a>
+         </div>
+        </form>
+      </div>
+    </div>
+  
+  </body>
